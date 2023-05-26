@@ -18,12 +18,12 @@
         height: auto;
         font-family: "Oswald", sans-serif;
         font-weight: 700;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
       }
       .container .asked {
         width: 100%;
-      }
-      .container {
-        width: 90%;
       }
       .sider-bar {
         height: 100vh;
@@ -39,7 +39,7 @@
   <body class="flex flex-col w-full">
     <header>
       <nav
-        class="navigation sm:flex  w-full sm:h-14 sm:items-center sm:pl-5 bg-white fixed shadow-md z-10"
+        class="navigation sm:flex w-full sm:h-14 sm:items-center sm:pl-5 bg-white fixed shadow-md z-10"
       >
         <div
           class="hidden logo sm:flex items-center bg-blue p-1.5 rounded w-52"
@@ -73,7 +73,7 @@
           <input
             type="text"
             placeholder="Search..."
-            class="w-3/4 px-10 pr-40 sm:pr-96 ml-5 sm:ml-10 border border-solid border-blue rounded outline-none py-1 placeholder:-mr-16  hover:shadow-lg hover:py-2"
+            class="w-4/5 px-10 pr-40 sm:pr-96 ml-5 sm:ml-10 border border-solid border-blue rounded outline-none py-1 placeholder:-mr-16 hover:shadow-lg hover:py-2"
           />
           <i
             class="fa-solid fa-magnifying-glass text-blue font-medium absolute left-24 top-5 sm:top-5 sm:left-16"
@@ -110,9 +110,9 @@
     </header>
     <br />
     <br />
-    <main class="flex w-full relative justify-center">
+    <main class="flex w-full relative sm:justify-center m-0 p-0">
       <div
-        class="hidden sider-bar fixed overflow-y-scroll p-8 pb-20 border-r border-grey top-16 w-1/2 sm:w-1/5 order-solid h-screen sm:flex flex-col left-0"
+        class="hidden sider-bar fixed overflow-y-scroll p-8 pb-20 border-r border-grey top-16 w-1/2 sm:w-1/5 border-solid h-screen sm:flex flex-col left-0"
       >
         <div class="sider-bar-connect">
           <div class="user flex gap-2">
@@ -225,12 +225,16 @@
         </div>
       </div>
       <div
-        class="container sm:ml-64 flexe flex-col px-8 sm:py-4 font-light w-full"
+        class="container sm:ml-64 flexe flex-col sm:px-8 sm:py-4 font-light w-full p-3 "
       >
         <div
           class="itro sm:py-2 w-full flex sm:flex-row flex-col sm:gap-20 border-b sm:justify-between border-grey pb-4"
         >
-          <p class="text-blue font-normal sm:font-extrabold sm:text-2xl pb-3 mt-5">25 Questions asked to day</p>
+          <p
+            class="text-blue font-normal sm:font-extrabold sm:text-2xl pb-3 mt-5"
+          >
+            25 Questions asked to day
+          </p>
           <div class="flex gap-8 sm:">
             <div
               class="categories hidden border border-grey rounded sm:flex items-center sm:w-full"
@@ -253,25 +257,21 @@
               <a href="" class="px-4 sm:px-8 py-2 text-blue">unanswered</a>
             </div>
             <div
-            class="phone-categories border border-grey rounded  items-center sm:w-full sm:hidden"
-          >
-            <a
-              href=""
-              class="px-4 sm:px-8  text-blue border-r border-blue"
-              >more asked</a
+              class="phone-categories border border-grey rounded items-center w-full sm:hidden"
             >
-            <a
-              href=""
-              class="px-4 sm:px-8  text-blue border-r border-blue"
-              >recents</a
-            >
-            <a
-              href=""
-              class="px-4 sm:px-8  text-blue border-r border-blue"
-              ><i class="fa-solid fa-check-double text-blue"></i></a
-            >
-            <a href="" class="px-4 sm:px-8  text-blue"><i class="fa-solid fa-check-to-slot text-blue"></i></a>
-          </div>
+              <a href="" class="px-4 sm:px-8 text-blue border-r border-blue"
+                >more asked</a
+              >
+              <a href="" class="px-4 sm:px-8 text-blue border-r border-blue"
+                >recents</a
+              >
+              <a href="" class="px-4 sm:px-8 text-blue border-r border-blue"
+                ><i class="fa-solid fa-check-double text-blue"></i
+              ></a>
+              <a href="" class="px-4 sm:px-8 text-blue"
+                ><i class="fa-solid fa-check-to-slot text-blue"></i
+              ></a>
+            </div>
             <button
               class="text-white text-center bg-blue px-4 font-bold text-2xl rounded-xl"
             >
@@ -279,10 +279,10 @@
             </button>
           </div>
         </div>
-        <div class="questions mt-2 max-w-full">
+        <div class="questions mt-2 w-full">
           <p class="text-blue font-medium text-base sm:text-2xl">Questions</p>
           <div
-            class="mt-2 w-full h-auto flex justify-between flex-wrap gap-y-10 "
+            class="mt-2 w-full h-auto flex justify-between flex-wrap gap-y-10"
           >
             <div class="bg-blue_f w-full sm:w-80 h-44 p-5 rounded-md">
               <p
