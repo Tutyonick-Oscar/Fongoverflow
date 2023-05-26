@@ -757,6 +757,14 @@ video {
   gap: 2rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-y-10 {
   row-gap: 2.5rem;
 }
@@ -1163,6 +1171,14 @@ video {
 
   .sm\:gap-20 {
     gap: 5rem;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
 
   .sm\:px-8 {
