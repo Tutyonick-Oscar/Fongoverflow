@@ -39,7 +39,7 @@
   <body class="flex flex-col w-full">
     <header>
       <nav
-        class="navigation sm:flex sm:w-full sm:h-14 sm:items-center sm:pl-5 bg-white sm:fixed shadow-md z-10"
+        class="navigation sm:flex  w-full sm:h-14 sm:items-center sm:pl-5 bg-white fixed shadow-md z-10"
       >
         <div
           class="hidden logo sm:flex items-center bg-blue p-1.5 rounded w-52"
@@ -53,14 +53,14 @@
             class=""
           />
         </div>
-        <div class="search p-2 relative sm:w-1/2 flex w-full h-14">
+        <div class="search p-2 relative sm:w-1/2 flex w-full h-14 bg-white">
           <div
-            class="icns-menu w-10 border border-grey flex justify-center px-4 items-center bg-blue rounded-tl-md rounded-bl-md sm:hidden"
+            class="icns-menu w-6 border border-grey flex justify-center px-4 items-center bg-blue rounded-tl-md rounded-bl-md sm:hidden"
           >
-            <i class="fa-solid fa-bars text-white text-1xl"></i>
+            <i class="fa-solid fa-bars text-white text-lg"></i>
           </div>
           <div
-            class="log-image bg-blue rounded-tr-md rounded-br-md w-10 flex justify-center sm:hidden"
+            class="log-image bg-blue rounded-tr-md rounded-br-md w-6 flex justify-center sm:hidden"
           >
             <img
               src="../photos/logoWhite.png"
@@ -73,10 +73,10 @@
           <input
             type="text"
             placeholder="Search..."
-            class="w-4/5 px-10 pr-40 sm:pr-96 ml-5 sm:ml-10 border border-solid border-blue rounded outline-none py-1 placeholder:-mr-16 hover:shadow-lg hover:py-2"
+            class="w-3/4 px-10 pr-40 sm:pr-96 ml-5 sm:ml-10 border border-solid border-blue rounded outline-none py-1 placeholder:-mr-16  hover:shadow-lg hover:py-2"
           />
           <i
-            class="fa-solid fa-magnifying-glass text-blue font-medium absolute left-32 top-5 sm:top-5 sm:left-16"
+            class="fa-solid fa-magnifying-glass text-blue font-medium absolute left-24 top-5 sm:top-5 sm:left-16"
           ></i>
         </div>
         <div
@@ -112,25 +112,28 @@
     <br />
     <main class="flex w-full relative justify-center">
       <div
-        class=" hidden sider-bar fixed overflow-y-scroll p-8 pb-20 border-r border-grey 
-        top-16 w-1/2 border-solid sm:w-2/5 h-screen  sm:flex flex-col left-0"
+        class="hidden sider-bar fixed overflow-y-scroll p-8 pb-20 border-r border-grey top-16 w-1/2 sm:w-1/5 order-solid h-screen sm:flex flex-col left-0"
       >
-      <div class="sider-bar-connect">
-        <div class="user flex gap-2">
-          <img src="../photos/me.jpg" alt="" width="30" height="30" class="rounded-full
-          border border-grey">
-          <p class="user-name text-center text-white">
-            @Tutyonick
-          </p>
-          <i class="fa-solid fa-chevron-down text-white text-sm mt-2"></i>
-          <div class="log w-32 h-32 bg-grey rounded-md flex flex-col items-center gap-5
-          absolute top-20 right-4">
-            <a href="" class="text-blue  border-b border-blue pb-1">Profil</a>
-            <a href="" class="text-blue  border-b border-blue pb-1">History</a>
-            <a href="" class="text-blue  border-b border-blue pb-1">Logout</a>
+        <div class="sider-bar-connect">
+          <div class="user flex gap-2">
+            <img
+              src="../photos/me.jpg"
+              alt=""
+              width="30"
+              height="30"
+              class="rounded-full border border-grey"
+            />
+            <p class="user-name text-center text-white">@Tutyonick</p>
+            <i class="fa-solid fa-chevron-down text-white text-sm mt-2"></i>
+            <div
+              class="log w-32 h-32 bg-grey rounded-md flex flex-col items-center gap-5 absolute top-20 right-4"
+            >
+              <a href="" class="text-blue border-b border-blue pb-1">Profil</a>
+              <a href="" class="text-blue border-b border-blue pb-1">History</a>
+              <a href="" class="text-blue border-b border-blue pb-1">Logout</a>
+            </div>
           </div>
         </div>
-      </div>
         <a
           href="home.html"
           class="transition-all py-4 hover:bg-gray hover:text-white rounded-sm focus:border-r-2 border-grey border-solid font-medium text-grey"
@@ -227,10 +230,10 @@
         <div
           class="itro sm:py-2 w-full flex sm:flex-row flex-col sm:gap-20 border-b sm:justify-between border-grey pb-4"
         >
-          <p class="text-blue font-medium">25 Questions asked to day</p>
-          <div class="flex justify-between sm:gap-28">
+          <p class="text-blue font-normal sm:font-extrabold sm:text-2xl pb-3 mt-5">25 Questions asked to day</p>
+          <div class="flex gap-8 sm:">
             <div
-              class="categories border border-grey rounded flex items-center sm:w-full"
+              class="categories hidden border border-grey rounded sm:flex items-center sm:w-full"
             >
               <a
                 href=""
@@ -249,6 +252,26 @@
               >
               <a href="" class="px-4 sm:px-8 py-2 text-blue">unanswered</a>
             </div>
+            <div
+            class="phone-categories border border-grey rounded  items-center sm:w-full sm:hidden"
+          >
+            <a
+              href=""
+              class="px-4 sm:px-8  text-blue border-r border-blue"
+              >more asked</a
+            >
+            <a
+              href=""
+              class="px-4 sm:px-8  text-blue border-r border-blue"
+              >recents</a
+            >
+            <a
+              href=""
+              class="px-4 sm:px-8  text-blue border-r border-blue"
+              ><i class="fa-solid fa-check-double text-blue"></i></a
+            >
+            <a href="" class="px-4 sm:px-8  text-blue"><i class="fa-solid fa-check-to-slot text-blue"></i></a>
+          </div>
             <button
               class="text-white text-center bg-blue px-4 font-bold text-2xl rounded-xl"
             >
@@ -257,9 +280,9 @@
           </div>
         </div>
         <div class="questions mt-2 max-w-full">
-          <p class="text-blue font-medium text-2xl">Questions</p>
+          <p class="text-blue font-medium text-base sm:text-2xl">Questions</p>
           <div
-            class="mt-2 w-full h-auto flex justify-between flex-wrap gap-y-10"
+            class="mt-2 w-full h-auto flex justify-between flex-wrap gap-y-10 "
           >
             <div class="bg-blue_f w-full sm:w-80 h-44 p-5 rounded-md">
               <p
